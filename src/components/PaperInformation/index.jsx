@@ -12,7 +12,12 @@ function PaperInformation(props) {
 
   } = userState
   return (
-  <Paper elevation={3}>
+  <Paper 
+  elevation={3}
+  sx={{
+    background:'#97D2EC'
+  }}
+  >
     <Stack 
     
     spacing={3} 

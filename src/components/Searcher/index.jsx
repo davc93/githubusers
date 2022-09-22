@@ -1,6 +1,7 @@
 import React from 'react'
 import {Stack, TextField , IconButton,Typography } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search'
+import { ColorLensOutlined } from '@mui/icons-material';
 
 
 function Searcher(props) {
@@ -39,9 +40,12 @@ function Searcher(props) {
         placeholder='davc93'
         variant='outlined'
         value={valueInput}
+        
         onChange={onSearchValueChange}
         sx={{
-            width:'90%'
+            width:'90%',
+    
+
 
         }}>
         </TextField>
