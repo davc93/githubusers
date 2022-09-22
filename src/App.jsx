@@ -19,10 +19,10 @@ function App() {
     if(userResponse.message == 'Not Found' ){
       const {davc93} = localStorage
       setInputUser(davc93);
-      setNotFound(true)
+      setNotFound(true);
       
     } else {
-
+      setNotFound(false)
       setUserState(userResponse)
     }
   }
@@ -42,7 +42,7 @@ function App() {
       flexDirection:'column',
       alignItems:'center'
     }}>
-      <Searcher inputUser={inputUser} setInputUser={setInputUser}></Searcher>
+      <Searcher inputUser={inputUser} setInputUser={setInputUser} notFound={notFound}></Searcher>
       <UserCard
         userState={userState}
       />

@@ -12,9 +12,10 @@ function PrincipalInformation(props) {
     const {
         name,
         login,
-        location,
         created_at,
     } = userState
+
+    const date = new Date(created_at)
   return (
     <React.Fragment>
         <Stack
@@ -25,7 +26,7 @@ function PrincipalInformation(props) {
         
         >
             <Typography variant="h4" >{name}</Typography>
-            <Typography variant='subtitle2' >{created_at}</Typography>
+            <Typography variant='subtitle2' >{date.toLocaleDateString()}</Typography>
         </Stack>
         <Typography variant="caption" >{`@${login}`}</Typography>
 

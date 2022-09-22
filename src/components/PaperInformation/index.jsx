@@ -16,7 +16,10 @@ function PaperInformation(props) {
     <Stack 
     
     spacing={3} 
-    direction='row'
+    direction={{
+      xs:'column',
+      md:'row'
+    }}
     sx={{
       margin:'20px',
       justifyContent:'space-evenly'

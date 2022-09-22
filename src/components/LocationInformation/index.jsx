@@ -21,7 +21,7 @@ function LocationInformation(props) {
             marginTop:'15px'
         }}
     >
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
             <Stack 
                 direction='row'
                 spacing={2}    
@@ -30,7 +30,7 @@ function LocationInformation(props) {
                 <Typography>{location}</Typography>
             </Stack>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
             <Stack
                 direction='row'
                 spacing={2}
@@ -40,7 +40,7 @@ function LocationInformation(props) {
 
             </Stack>
         </Grid>    
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
             <Stack
                 direction='row'
                 spacing={2}
@@ -51,7 +51,7 @@ function LocationInformation(props) {
 
             </Stack>
         </Grid>    
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
             <Stack
                 direction='row'
                 spacing={2}

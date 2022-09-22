@@ -14,13 +14,13 @@ function UserCard(props) {
         marginTop: '15px'
       }}
       >
-      <Grid item xs={3}>
+      <Grid item xs={12} md={3}>
         <CardMedia sx={{
           borderRadius:'50%',
           marginLeft:'10px'
         }} component="img" alt="Github User" image={avatar_url} />
       </Grid>
-      <Grid item xs={9}>
+      <Grid item xs={12} md={9}>
         <Stack
         direction='column'
         spacing={1}

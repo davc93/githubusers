@@ -1,5 +1,5 @@
 import React from 'react'
-import {Stack, TextField , IconButton } from '@mui/material';
+import {Stack, TextField , IconButton,Typography } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search'
 
 
@@ -7,7 +7,8 @@ function Searcher(props) {
 
     const {
         inputUser,
-        setInputUser
+        setInputUser,
+        notFound
     } = props
 
     const [valueInput, setValueInput] = React.useState('')
@@ -22,7 +23,8 @@ function Searcher(props) {
     }
     console.log(valueInput)
   return (
-    <Stack
+    <React.Fragment>
+            <Stack
     direction='row'
     sx={{    
         marginTop:'30px',
@@ -52,6 +54,14 @@ function Searcher(props) {
         <SearchIcon/>
         </IconButton>
     </Stack>
+        {notFound && 
+        <Stack>
+            <Typography>
+                User Not Found
+            </Typography>
+        </Stack>}
+    </React.Fragment>
+
   )
 }
 
