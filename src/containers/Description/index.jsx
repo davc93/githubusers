@@ -1,7 +1,7 @@
 import { Stack, Typography } from '@mui/material';
 
 import React from 'react'
-import LocalInformation from '../../components/LocalInformation';
+import LocationInformation from '../../components/LocationInformation';
 import PaperInformation from '../../components/PaperInformation';
 
 function Description(props) {
@@ -11,13 +11,17 @@ function Description(props) {
 
   return (
     <React.Fragment>
-        <Stack>
-        {bio ? <Typography>{bio}</Typography> : <Typography>Sin bio</Typography>}
+        <Stack
+        sx={{
+          justifyContent:'center'
+        }}
+        >
+        {bio ? <Typography variant="body1">{bio}</Typography> : <Typography>Sin bio</Typography>}
 
 
         </Stack>
         <PaperInformation userState={userState} />
-        {/* <LocalInformation /> */}
+        <LocationInformation userState={userState} />
     </React.Fragment>
   )
 }
