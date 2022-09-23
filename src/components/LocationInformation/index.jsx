@@ -46,7 +46,7 @@ function LocationInformation(props) {
                 spacing={2}
             >
                 <Language />
-                { blog ? <a href={`https://${blog}` } target='_blank'><Typography color='blue'>{blog}</Typography></a>  : 'Not Available' }
+                { blog ? <a href={`${blog}` } target='_blank'><Typography color='blue'>{blog}</Typography></a>  : 'Not Available' }
 
 
             </Stack>
